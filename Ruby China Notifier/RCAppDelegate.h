@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "FayeClient.h"
 
 @interface RCAppDelegate : NSObject <NSApplicationDelegate>
 

@@ -1,0 +1,3 @@
+[submodule "SharedLib/FayeObjC"]
+	path = SharedLib/FayeObjC
+	url = git://github.com/pcrawfor/FayeObjC.git

@@ -13,6 +13,27 @@
 		964AAC7E15F49C7B004DAAB8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC7C15F49C7B004DAAB8 /* Credits.rtf */; };
 		964AAC8115F49C7B004DAAB8 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */; };
 		964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC8215F49C7B004DAAB8 /* MainMenu.xib */; };
+		96BC29DD15F49EE4004AE166 /* NSDate-UTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29B615F49EE4004AE166 /* NSDate-UTC.m */; };
+		96BC29DE15F49EE4004AE166 /* NSObject+PropertySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29B815F49EE4004AE166 /* NSObject+PropertySupport.m */; };
+		96BC29DF15F49EE4004AE166 /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29BA15F49EE4004AE166 /* NSString+InflectionSupport.m */; };
+		96BC29E015F49EE4004AE166 /* ObjectiveResourceDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29BC15F49EE4004AE166 /* ObjectiveResourceDateFormatter.m */; };
+		96BC29E115F49EE4004AE166 /* NSData+Serialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29BF15F49EE4004AE166 /* NSData+Serialize.m */; };
+		96BC29E215F49EE4004AE166 /* NSDate+Serialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29C115F49EE4004AE166 /* NSDate+Serialize.m */; };
+		96BC29E315F49EE4004AE166 /* NSDictionary+KeyTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29C315F49EE4004AE166 /* NSDictionary+KeyTranslation.m */; };
+		96BC29E415F49EE4004AE166 /* NSObject+Serialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29C515F49EE4004AE166 /* NSObject+Serialize.m */; };
+		96BC29E515F49EE4004AE166 /* NSString+Serialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29C715F49EE4004AE166 /* NSString+Serialize.m */; };
+		96BC29E615F49EE4004AE166 /* FayeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29C915F49EE4004AE166 /* FayeClient.m */; };
+		96BC29E715F49EE4004AE166 /* FayeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29CB15F49EE4004AE166 /* FayeMessage.m */; };
+		96BC29E815F49EE4004AE166 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29CE15F49EE4004AE166 /* JSONKit.m */; };
+		96BC29E915F49EE4004AE166 /* AsyncSocket Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29D215F49EE4004AE166 /* AsyncSocket Documentation.html */; };
+		96BC29EA15F49EE4004AE166 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29D415F49EE4004AE166 /* AsyncSocket.m */; };
+		96BC29EB15F49EE4004AE166 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29D615F49EE4004AE166 /* AsyncUdpSocket.m */; };
+		96BC29EC15F49EE4004AE166 /* changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29D715F49EE4004AE166 /* changes.txt */; };
+		96BC29ED15F49EE4004AE166 /* ZTWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29DC15F49EE4004AE166 /* ZTWebSocket.m */; };
+		96BC29F415F4A6DC004AE166 /* RCAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29F315F4A6DC004AE166 /* RCAppController.m */; };
+		96BC29F615F4A705004AE166 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29F515F4A705004AE166 /* icon.icns */; };
+		96BC29F915F4AA91004AE166 /* status0.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29F715F4AA91004AE166 /* status0.png */; };
+		96BC29FA15F4AA91004AE166 /* status1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29F815F4AA91004AE166 /* status1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +50,45 @@
 		964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
 		964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
 		964AAC8315F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		96BC29B515F49EE4004AE166 /* NSDate-UTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-UTC.h"; sourceTree = "<group>"; };
+		96BC29B615F49EE4004AE166 /* NSDate-UTC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-UTC.m"; sourceTree = "<group>"; };
+		96BC29B715F49EE4004AE166 /* NSObject+PropertySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertySupport.h"; sourceTree = "<group>"; };
+		96BC29B815F49EE4004AE166 /* NSObject+PropertySupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+PropertySupport.m"; sourceTree = "<group>"; };
+		96BC29B915F49EE4004AE166 /* NSString+InflectionSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+InflectionSupport.h"; sourceTree = "<group>"; };
+		96BC29BA15F49EE4004AE166 /* NSString+InflectionSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+InflectionSupport.m"; sourceTree = "<group>"; };
+		96BC29BB15F49EE4004AE166 /* ObjectiveResourceDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveResourceDateFormatter.h; sourceTree = "<group>"; };
+		96BC29BC15F49EE4004AE166 /* ObjectiveResourceDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveResourceDateFormatter.m; sourceTree = "<group>"; };
+		96BC29BE15F49EE4004AE166 /* NSData+Serialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Serialize.h"; sourceTree = "<group>"; };
+		96BC29BF15F49EE4004AE166 /* NSData+Serialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Serialize.m"; sourceTree = "<group>"; };
+		96BC29C015F49EE4004AE166 /* NSDate+Serialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Serialize.h"; sourceTree = "<group>"; };
+		96BC29C115F49EE4004AE166 /* NSDate+Serialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Serialize.m"; sourceTree = "<group>"; };
+		96BC29C215F49EE4004AE166 /* NSDictionary+KeyTranslation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+KeyTranslation.h"; sourceTree = "<group>"; };
+		96BC29C315F49EE4004AE166 /* NSDictionary+KeyTranslation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+KeyTranslation.m"; sourceTree = "<group>"; };
+		96BC29C415F49EE4004AE166 /* NSObject+Serialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Serialize.h"; sourceTree = "<group>"; };
+		96BC29C515F49EE4004AE166 /* NSObject+Serialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Serialize.m"; sourceTree = "<group>"; };
+		96BC29C615F49EE4004AE166 /* NSString+Serialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Serialize.h"; sourceTree = "<group>"; };
+		96BC29C715F49EE4004AE166 /* NSString+Serialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Serialize.m"; sourceTree = "<group>"; };
+		96BC29C815F49EE4004AE166 /* FayeClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FayeClient.h; sourceTree = "<group>"; };
+		96BC29C915F49EE4004AE166 /* FayeClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FayeClient.m; sourceTree = "<group>"; };
+		96BC29CA15F49EE4004AE166 /* FayeMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FayeMessage.h; sourceTree = "<group>"; };
+		96BC29CB15F49EE4004AE166 /* FayeMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FayeMessage.m; sourceTree = "<group>"; };
+		96BC29CD15F49EE4004AE166 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		96BC29CE15F49EE4004AE166 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		96BC29D215F49EE4004AE166 /* AsyncSocket Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "AsyncSocket Documentation.html"; sourceTree = "<group>"; };
+		96BC29D315F49EE4004AE166 /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		96BC29D415F49EE4004AE166 /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		96BC29D515F49EE4004AE166 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
+		96BC29D615F49EE4004AE166 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
+		96BC29D715F49EE4004AE166 /* changes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changes.txt; sourceTree = "<group>"; };
+		96BC29D915F49EE4004AE166 /* Zimt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zimt.h; sourceTree = "<group>"; };
+		96BC29DA15F49EE4004AE166 /* ZTLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTLog.h; sourceTree = "<group>"; };
+		96BC29DB15F49EE4004AE166 /* ZTWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZTWebSocket.h; sourceTree = "<group>"; };
+		96BC29DC15F49EE4004AE166 /* ZTWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZTWebSocket.m; sourceTree = "<group>"; };
+		96BC29F215F4A6DC004AE166 /* RCAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAppController.h; sourceTree = "<group>"; };
+		96BC29F315F4A6DC004AE166 /* RCAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAppController.m; sourceTree = "<group>"; };
+		96BC29F515F4A705004AE166 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		96BC29F715F4AA91004AE166 /* status0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status0.png; sourceTree = "<group>"; };
+		96BC29F815F4AA91004AE166 /* status1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +142,16 @@
 		964AAC7315F49C7B004DAAB8 /* Ruby China Notifier */ = {
 			isa = PBXGroup;
 			children = (
+				96BC29F715F4AA91004AE166 /* status0.png */,
+				96BC29F815F4AA91004AE166 /* status1.png */,
+				96BC29F515F4A705004AE166 /* icon.icns */,
+				96BC29B315F49EE4004AE166 /* FayeObjc */,
 				964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */,
 				964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */,
 				964AAC8215F49C7B004DAAB8 /* MainMenu.xib */,
 				964AAC7415F49C7B004DAAB8 /* Supporting Files */,
+				96BC29F215F4A6DC004AE166 /* RCAppController.h */,
+				96BC29F315F4A6DC004AE166 /* RCAppController.m */,
 			);
 			path = "Ruby China Notifier";
 			sourceTree = "<group>";
@@ -100,6 +166,104 @@
 				964AAC7C15F49C7B004DAAB8 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96BC29B315F49EE4004AE166 /* FayeObjc */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29B415F49EE4004AE166 /* Extensions */,
+				96BC29C815F49EE4004AE166 /* FayeClient.h */,
+				96BC29C915F49EE4004AE166 /* FayeClient.m */,
+				96BC29CA15F49EE4004AE166 /* FayeMessage.h */,
+				96BC29CB15F49EE4004AE166 /* FayeMessage.m */,
+				96BC29CC15F49EE4004AE166 /* JSONKit */,
+				96BC29CF15F49EE4004AE166 /* zimt */,
+			);
+			name = FayeObjc;
+			path = SharedLib/FayeObjC/FayeObjc;
+			sourceTree = SOURCE_ROOT;
+		};
+		96BC29B415F49EE4004AE166 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29B515F49EE4004AE166 /* NSDate-UTC.h */,
+				96BC29B615F49EE4004AE166 /* NSDate-UTC.m */,
+				96BC29B715F49EE4004AE166 /* NSObject+PropertySupport.h */,
+				96BC29B815F49EE4004AE166 /* NSObject+PropertySupport.m */,
+				96BC29B915F49EE4004AE166 /* NSString+InflectionSupport.h */,
+				96BC29BA15F49EE4004AE166 /* NSString+InflectionSupport.m */,
+				96BC29BB15F49EE4004AE166 /* ObjectiveResourceDateFormatter.h */,
+				96BC29BC15F49EE4004AE166 /* ObjectiveResourceDateFormatter.m */,
+				96BC29BD15F49EE4004AE166 /* Serialize */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96BC29BD15F49EE4004AE166 /* Serialize */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29BE15F49EE4004AE166 /* NSData+Serialize.h */,
+				96BC29BF15F49EE4004AE166 /* NSData+Serialize.m */,
+				96BC29C015F49EE4004AE166 /* NSDate+Serialize.h */,
+				96BC29C115F49EE4004AE166 /* NSDate+Serialize.m */,
+				96BC29C215F49EE4004AE166 /* NSDictionary+KeyTranslation.h */,
+				96BC29C315F49EE4004AE166 /* NSDictionary+KeyTranslation.m */,
+				96BC29C415F49EE4004AE166 /* NSObject+Serialize.h */,
+				96BC29C515F49EE4004AE166 /* NSObject+Serialize.m */,
+				96BC29C615F49EE4004AE166 /* NSString+Serialize.h */,
+				96BC29C715F49EE4004AE166 /* NSString+Serialize.m */,
+			);
+			path = Serialize;
+			sourceTree = "<group>";
+		};
+		96BC29CC15F49EE4004AE166 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29CD15F49EE4004AE166 /* JSONKit.h */,
+				96BC29CE15F49EE4004AE166 /* JSONKit.m */,
+			);
+			path = JSONKit;
+			sourceTree = "<group>";
+		};
+		96BC29CF15F49EE4004AE166 /* zimt */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29D015F49EE4004AE166 /* Vendor */,
+				96BC29D815F49EE4004AE166 /* Zimt */,
+			);
+			path = zimt;
+			sourceTree = "<group>";
+		};
+		96BC29D015F49EE4004AE166 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29D115F49EE4004AE166 /* AsyncSocket */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		96BC29D115F49EE4004AE166 /* AsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29D215F49EE4004AE166 /* AsyncSocket Documentation.html */,
+				96BC29D315F49EE4004AE166 /* AsyncSocket.h */,
+				96BC29D415F49EE4004AE166 /* AsyncSocket.m */,
+				96BC29D515F49EE4004AE166 /* AsyncUdpSocket.h */,
+				96BC29D615F49EE4004AE166 /* AsyncUdpSocket.m */,
+				96BC29D715F49EE4004AE166 /* changes.txt */,
+			);
+			path = AsyncSocket;
+			sourceTree = "<group>";
+		};
+		96BC29D815F49EE4004AE166 /* Zimt */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29D915F49EE4004AE166 /* Zimt.h */,
+				96BC29DA15F49EE4004AE166 /* ZTLog.h */,
+				96BC29DB15F49EE4004AE166 /* ZTWebSocket.h */,
+				96BC29DC15F49EE4004AE166 /* ZTWebSocket.m */,
+			);
+			path = Zimt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +321,11 @@
 				964AAC7815F49C7B004DAAB8 /* InfoPlist.strings in Resources */,
 				964AAC7E15F49C7B004DAAB8 /* Credits.rtf in Resources */,
 				964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */,
+				96BC29E915F49EE4004AE166 /* AsyncSocket Documentation.html in Resources */,
+				96BC29EC15F49EE4004AE166 /* changes.txt in Resources */,
+				96BC29F615F4A705004AE166 /* icon.icns in Resources */,
+				96BC29F915F4AA91004AE166 /* status0.png in Resources */,
+				96BC29FA15F4AA91004AE166 /* status1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +338,22 @@
 			files = (
 				964AAC7A15F49C7B004DAAB8 /* main.m in Sources */,
 				964AAC8115F49C7B004DAAB8 /* RCAppDelegate.m in Sources */,
+				96BC29DD15F49EE4004AE166 /* NSDate-UTC.m in Sources */,
+				96BC29DE15F49EE4004AE166 /* NSObject+PropertySupport.m in Sources */,
+				96BC29DF15F49EE4004AE166 /* NSString+InflectionSupport.m in Sources */,
+				96BC29E015F49EE4004AE166 /* ObjectiveResourceDateFormatter.m in Sources */,
+				96BC29E115F49EE4004AE166 /* NSData+Serialize.m in Sources */,
+				96BC29E215F49EE4004AE166 /* NSDate+Serialize.m in Sources */,
+				96BC29E315F49EE4004AE166 /* NSDictionary+KeyTranslation.m in Sources */,
+				96BC29E415F49EE4004AE166 /* NSObject+Serialize.m in Sources */,
+				96BC29E515F49EE4004AE166 /* NSString+Serialize.m in Sources */,
+				96BC29E615F49EE4004AE166 /* FayeClient.m in Sources */,
+				96BC29E715F49EE4004AE166 /* FayeMessage.m in Sources */,
+				96BC29E815F49EE4004AE166 /* JSONKit.m in Sources */,
+				96BC29EA15F49EE4004AE166 /* AsyncSocket.m in Sources */,
+				96BC29EB15F49EE4004AE166 /* AsyncUdpSocket.m in Sources */,
+				96BC29ED15F49EE4004AE166 /* ZTWebSocket.m in Sources */,
+				96BC29F415F4A6DC004AE166 /* RCAppController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +441,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ruby China Notifier/Ruby China Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Ruby China Notifier/Ruby China Notifier-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -268,6 +454,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ruby China Notifier/Ruby China Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Ruby China Notifier/Ruby China Notifier-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -292,6 +479,7 @@
 				964AAC8915F49C7B004DAAB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
