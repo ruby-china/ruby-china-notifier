@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		964AAC6E15F49C7B004DAAB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */; };
+		964AAC7815F49C7B004DAAB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC7615F49C7B004DAAB8 /* InfoPlist.strings */; };
+		964AAC7A15F49C7B004DAAB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC7915F49C7B004DAAB8 /* main.m */; };
+		964AAC7E15F49C7B004DAAB8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC7C15F49C7B004DAAB8 /* Credits.rtf */; };
+		964AAC8115F49C7B004DAAB8 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */; };
+		964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC8215F49C7B004DAAB8 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		964AAC6915F49C7B004DAAB8 /* Ruby China Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby China Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		964AAC7015F49C7B004DAAB8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		964AAC7115F49C7B004DAAB8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		964AAC7215F49C7B004DAAB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		964AAC7515F49C7B004DAAB8 /* Ruby China Notifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ruby China Notifier-Info.plist"; sourceTree = "<group>"; };
+		964AAC7715F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		964AAC7915F49C7B004DAAB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		964AAC7B15F49C7B004DAAB8 /* Ruby China Notifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ruby China Notifier-Prefix.pch"; sourceTree = "<group>"; };
+		964AAC7D15F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
+		964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
+		964AAC8315F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		964AAC6615F49C7A004DAAB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964AAC6E15F49C7B004DAAB8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		964AAC5E15F49C7A004DAAB8 = {
+			isa = PBXGroup;
+			children = (
+				964AAC7315F49C7B004DAAB8 /* Ruby China Notifier */,
+				964AAC6C15F49C7B004DAAB8 /* Frameworks */,
+				964AAC6A15F49C7B004DAAB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		964AAC6A15F49C7B004DAAB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				964AAC6915F49C7B004DAAB8 /* Ruby China Notifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		964AAC6C15F49C7B004DAAB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */,
+				964AAC6F15F49C7B004DAAB8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		964AAC6F15F49C7B004DAAB8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				964AAC7015F49C7B004DAAB8 /* AppKit.framework */,
+				964AAC7115F49C7B004DAAB8 /* CoreData.framework */,
+				964AAC7215F49C7B004DAAB8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		964AAC7315F49C7B004DAAB8 /* Ruby China Notifier */ = {
+			isa = PBXGroup;
+			children = (
+				964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */,
+				964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */,
+				964AAC8215F49C7B004DAAB8 /* MainMenu.xib */,
+				964AAC7415F49C7B004DAAB8 /* Supporting Files */,
+			);
+			path = "Ruby China Notifier";
+			sourceTree = "<group>";
+		};
+		964AAC7415F49C7B004DAAB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				964AAC7515F49C7B004DAAB8 /* Ruby China Notifier-Info.plist */,
+				964AAC7615F49C7B004DAAB8 /* InfoPlist.strings */,
+				964AAC7915F49C7B004DAAB8 /* main.m */,
+				964AAC7B15F49C7B004DAAB8 /* Ruby China Notifier-Prefix.pch */,
+				964AAC7C15F49C7B004DAAB8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		964AAC6815F49C7A004DAAB8 /* Ruby China Notifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 964AAC8715F49C7B004DAAB8 /* Build configuration list for PBXNativeTarget "Ruby China Notifier" */;
+			buildPhases = (
+				964AAC6515F49C7A004DAAB8 /* Sources */,
+				964AAC6615F49C7A004DAAB8 /* Frameworks */,
+				964AAC6715F49C7A004DAAB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ruby China Notifier";
+			productName = "Ruby China Notifier";
+			productReference = 964AAC6915F49C7B004DAAB8 /* Ruby China Notifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		964AAC6015F49C7A004DAAB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RC;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Ruby China";
+			};
+			buildConfigurationList = 964AAC6315F49C7A004DAAB8 /* Build configuration list for PBXProject "Ruby China Notifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 964AAC5E15F49C7A004DAAB8;
+			productRefGroup = 964AAC6A15F49C7B004DAAB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				964AAC6815F49C7A004DAAB8 /* Ruby China Notifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		964AAC6715F49C7A004DAAB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964AAC7815F49C7B004DAAB8 /* InfoPlist.strings in Resources */,
+				964AAC7E15F49C7B004DAAB8 /* Credits.rtf in Resources */,
+				964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		964AAC6515F49C7A004DAAB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				964AAC7A15F49C7B004DAAB8 /* main.m in Sources */,
+				964AAC8115F49C7B004DAAB8 /* RCAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		964AAC7615F49C7B004DAAB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964AAC7715F49C7B004DAAB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		964AAC7C15F49C7B004DAAB8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964AAC7D15F49C7B004DAAB8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		964AAC8215F49C7B004DAAB8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				964AAC8315F49C7B004DAAB8 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		964AAC8515F49C7B004DAAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		964AAC8615F49C7B004DAAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		964AAC8815F49C7B004DAAB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby China Notifier/Ruby China Notifier-Prefix.pch";
+				INFOPLIST_FILE = "Ruby China Notifier/Ruby China Notifier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		964AAC8915F49C7B004DAAB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ruby China Notifier/Ruby China Notifier-Prefix.pch";
+				INFOPLIST_FILE = "Ruby China Notifier/Ruby China Notifier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		964AAC6315F49C7A004DAAB8 /* Build configuration list for PBXProject "Ruby China Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964AAC8515F49C7B004DAAB8 /* Debug */,
+				964AAC8615F49C7B004DAAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		964AAC8715F49C7B004DAAB8 /* Build configuration list for PBXNativeTarget "Ruby China Notifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				964AAC8815F49C7B004DAAB8 /* Debug */,
+				964AAC8915F49C7B004DAAB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 964AAC6015F49C7A004DAAB8 /* Project object */;
+}
