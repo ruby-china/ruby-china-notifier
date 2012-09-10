@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9641770C15FDF87600DA5CC0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641770B15FDF87500DA5CC0 /* libz.dylib */; };
 		964AAC6E15F49C7B004DAAB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */; };
 		964AAC7815F49C7B004DAAB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC7615F49C7B004DAAB8 /* InfoPlist.strings */; };
 		964AAC7A15F49C7B004DAAB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC7915F49C7B004DAAB8 /* main.m */; };
 		964AAC7E15F49C7B004DAAB8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC7C15F49C7B004DAAB8 /* Credits.rtf */; };
 		964AAC8115F49C7B004DAAB8 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */; };
 		964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC8215F49C7B004DAAB8 /* MainMenu.xib */; };
+		9673847215F9D91F0004D8B2 /* RCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9673847015F9D91F0004D8B2 /* RCPreferencesWindowController.m */; };
+		9673847315F9D91F0004D8B2 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9673847115F9D91F0004D8B2 /* Preferences.xib */; };
+		9673847715F9DE2C0004D8B2 /* RCSettingsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9673847615F9DE2C0004D8B2 /* RCSettingsUtil.m */; };
 		96BC29DD15F49EE4004AE166 /* NSDate-UTC.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29B615F49EE4004AE166 /* NSDate-UTC.m */; };
 		96BC29DE15F49EE4004AE166 /* NSObject+PropertySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29B815F49EE4004AE166 /* NSObject+PropertySupport.m */; };
 		96BC29DF15F49EE4004AE166 /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29BA15F49EE4004AE166 /* NSString+InflectionSupport.m */; };
@@ -37,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9641770B15FDF87500DA5CC0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		964AAC6915F49C7B004DAAB8 /* Ruby China Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby China Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		964AAC7015F49C7B004DAAB8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -50,6 +55,11 @@
 		964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
 		964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
 		964AAC8315F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9673846F15F9D91F0004D8B2 /* RCPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCPreferencesWindowController.h; sourceTree = "<group>"; };
+		9673847015F9D91F0004D8B2 /* RCPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCPreferencesWindowController.m; sourceTree = "<group>"; };
+		9673847115F9D91F0004D8B2 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		9673847515F9DE2C0004D8B2 /* RCSettingsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSettingsUtil.h; sourceTree = "<group>"; };
+		9673847615F9DE2C0004D8B2 /* RCSettingsUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSettingsUtil.m; sourceTree = "<group>"; };
 		96BC29B515F49EE4004AE166 /* NSDate-UTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-UTC.h"; sourceTree = "<group>"; };
 		96BC29B615F49EE4004AE166 /* NSDate-UTC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-UTC.m"; sourceTree = "<group>"; };
 		96BC29B715F49EE4004AE166 /* NSObject+PropertySupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+PropertySupport.h"; sourceTree = "<group>"; };
@@ -96,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9641770C15FDF87600DA5CC0 /* libz.dylib in Frameworks */,
 				964AAC6E15F49C7B004DAAB8 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +134,7 @@
 		964AAC6C15F49C7B004DAAB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9641770B15FDF87500DA5CC0 /* libz.dylib */,
 				964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */,
 				964AAC6F15F49C7B004DAAB8 /* Other Frameworks */,
 			);
@@ -142,16 +154,13 @@
 		964AAC7315F49C7B004DAAB8 /* Ruby China Notifier */ = {
 			isa = PBXGroup;
 			children = (
-				96BC29F715F4AA91004AE166 /* status0.png */,
-				96BC29F815F4AA91004AE166 /* status1.png */,
-				96BC29F515F4A705004AE166 /* icon.icns */,
-				96BC29B315F49EE4004AE166 /* FayeObjc */,
+				9673847415F9DE0E0004D8B2 /* Utils */,
+				9673846E15F9D8D30004D8B2 /* SharedLibraries */,
+				9673846D15F9D8C60004D8B2 /* Resources */,
+				9673846B15F9D8B50004D8B2 /* Controllers */,
 				964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */,
 				964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */,
-				964AAC8215F49C7B004DAAB8 /* MainMenu.xib */,
 				964AAC7415F49C7B004DAAB8 /* Supporting Files */,
-				96BC29F215F4A6DC004AE166 /* RCAppController.h */,
-				96BC29F315F4A6DC004AE166 /* RCAppController.m */,
 			);
 			path = "Ruby China Notifier";
 			sourceTree = "<group>";
@@ -166,6 +175,46 @@
 				964AAC7C15F49C7B004DAAB8 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9673846B15F9D8B50004D8B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29F215F4A6DC004AE166 /* RCAppController.h */,
+				96BC29F315F4A6DC004AE166 /* RCAppController.m */,
+				9673846F15F9D91F0004D8B2 /* RCPreferencesWindowController.h */,
+				9673847015F9D91F0004D8B2 /* RCPreferencesWindowController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9673846D15F9D8C60004D8B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9673847115F9D91F0004D8B2 /* Preferences.xib */,
+				96BC29F715F4AA91004AE166 /* status0.png */,
+				96BC29F815F4AA91004AE166 /* status1.png */,
+				96BC29F515F4A705004AE166 /* icon.icns */,
+				964AAC8215F49C7B004DAAB8 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9673846E15F9D8D30004D8B2 /* SharedLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				96BC29B315F49EE4004AE166 /* FayeObjc */,
+			);
+			name = SharedLibraries;
+			sourceTree = "<group>";
+		};
+		9673847415F9DE0E0004D8B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9673847515F9DE2C0004D8B2 /* RCSettingsUtil.h */,
+				9673847615F9DE2C0004D8B2 /* RCSettingsUtil.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		96BC29B315F49EE4004AE166 /* FayeObjc */ = {
@@ -326,6 +375,7 @@
 				96BC29F615F4A705004AE166 /* icon.icns in Resources */,
 				96BC29F915F4AA91004AE166 /* status0.png in Resources */,
 				96BC29FA15F4AA91004AE166 /* status1.png in Resources */,
+				9673847315F9D91F0004D8B2 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +404,8 @@
 				96BC29EB15F49EE4004AE166 /* AsyncUdpSocket.m in Sources */,
 				96BC29ED15F49EE4004AE166 /* ZTWebSocket.m in Sources */,
 				96BC29F415F4A6DC004AE166 /* RCAppController.m in Sources */,
+				9673847215F9D91F0004D8B2 /* RCPreferencesWindowController.m in Sources */,
+				9673847715F9DE2C0004D8B2 /* RCSettingsUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +489,9 @@
 		964AAC8815F49C7B004DAAB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ruby China Notifier/Ruby China Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Ruby China Notifier/Ruby China Notifier-Info.plist";
@@ -450,7 +504,9 @@
 		964AAC8915F49C7B004DAAB8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ruby China Notifier/Ruby China Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Ruby China Notifier/Ruby China Notifier-Info.plist";

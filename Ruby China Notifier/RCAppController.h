@@ -8,15 +8,21 @@
 
 #import <Cocoa/Cocoa.h>
 #import "FayeClient.h"
+#import "RCPreferencesWindowController.h"
+#import "JSONKit.h"
 
-@interface RCAppController : NSStatusBar <FayeClientDelegate, NSUserNotificationCenterDelegate>
+@interface RCAppController : NSStatusBar <FayeClientDelegate, NSUserNotificationCenterDelegate> {
+    RCPreferencesWindowController *preferencesController;
+}
 
+@property (retain) IBOutlet NSWindow *settingWindow;
 @property (retain) IBOutlet NSMenu *statusMenu;
 @property (retain) NSStatusItem *statusItem;
 @property (retain) NSImage *statusImage;
 @property (retain) NSImage *statusHighlightImage;
 
 - (IBAction)about: (id)sender;
+- (IBAction)settingAction:(id)sender;
 
 
 @end

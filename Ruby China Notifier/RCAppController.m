@@ -16,7 +16,7 @@
     static NSString * APP_DOMAIN = @"ruby-china.org";
 #endif
 
-@synthesize statusItem, statusImage, statusHighlightImage, statusMenu;
+@synthesize statusItem, statusImage, statusHighlightImage, statusMenu, settingWindow;
 
 - (void)awakeFromNib {
     
@@ -28,22 +28,31 @@
     statusHighlightImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"status1" ofType:@"png"]];
     
     [statusItem setImage:statusImage];
-    [statusItem setAlternateImage:statusHighlightImage];
+    // [statusItem setAlternateImage:statusHighlightImage];
     [statusItem setMenu:statusMenu];
     [statusItem setToolTip:@"Ruby China Notifier"];
     
-    [statusItem setHighlightMode:false];
+    [statusItem setHighlightMode:true];
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
     
     [[NSApp dockTile] display];
-    NSLog(@".........................");
     
-    // Insert code here to initialize your application
-    NSString *user_token = @"265c6e03e5223ca312c8aaa1e3263184";
-    FayeClient *client = [[FayeClient alloc] initWithURLString: [NSString stringWithFormat:@"ws://%@:8080/faye", APP_DOMAIN] channel: [NSString stringWithFormat: @"/notifications_count/%@", user_token]];
+    if ([RCSettingsUtil readToken] == @"") {
+        [self settingAction:self];
+        NSLog(@"after setting action");
+    }
+    
+    NSString *user_channel_id = [self tempAccessTokenFromRemote];
+    FayeClient *client = [[FayeClient alloc] initWithURLString: [NSString stringWithFormat:@"ws://%@:8080/faye", APP_DOMAIN] channel: [NSString stringWithFormat: @"/notifications_count/%@", user_channel_id]];
     client.delegate = self;
     [client connectToServer];
+}
+
+- (NSString *) tempAccessTokenFromRemote {
+    NSURL *url = [NSURL URLWithString: [NSString stringWithFormat:@"%@/api/users/temp_access_token?token=%@",APP_DOMAIN,[RCSettingsUtil readToken]]];
+    NSString *result = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    return result;
 }
 
 - (void)dealloc{
@@ -56,6 +65,13 @@
 
 - (void)about:(id)sender{
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://ruby-china.org"]];
+}
+
+- (void)settingAction:(id)sender {
+    if (preferencesController == nil) {
+        preferencesController = [[RCPreferencesWindowController alloc] initWithWindowNibName:@"Preferences"];
+    }
+    [preferencesController showWindow:self];
 }
 
 
@@ -110,5 +126,7 @@
 - (void)disconnectedFromServer{
     
 }
+
+
 
 @end
