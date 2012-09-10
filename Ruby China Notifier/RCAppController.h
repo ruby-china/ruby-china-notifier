@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "FayeClient.h"
 #import "RCPreferencesWindowController.h"
+#import "RCUrlUtil.h"
 #import "JSONKit.h"
 
 @interface RCAppController : NSStatusBar <FayeClientDelegate, NSUserNotificationCenterDelegate> {

@@ -10,12 +10,6 @@
 
 @implementation RCAppController
 
-#ifdef DEBUG
-    static NSString * APP_DOMAIN = @"127.0.0.1";
-#else
-    static NSString * APP_DOMAIN = @"ruby-china.org";
-#endif
-
 @synthesize statusItem, statusImage, statusHighlightImage, statusMenu, settingWindow;
 
 - (void)awakeFromNib {
@@ -44,15 +38,23 @@
     }
     
     NSString *user_channel_id = [self tempAccessTokenFromRemote];
-    FayeClient *client = [[FayeClient alloc] initWithURLString: [NSString stringWithFormat:@"ws://%@:8080/faye", APP_DOMAIN] channel: [NSString stringWithFormat: @"/notifications_count/%@", user_channel_id]];
+    FayeClient *client = [[FayeClient alloc] initWithURLString: [RCUrlUtil fayeAppUrlWithPath:@"/faye"] channel: [NSString stringWithFormat: @"/notifications_count/%@", user_channel_id]];
     client.delegate = self;
     [client connectToServer];
 }
 
 - (NSString *) tempAccessTokenFromRemote {
-    NSURL *url = [NSURL URLWithString: [NSString stringWithFormat:@"%@/api/users/temp_access_token?token=%@",APP_DOMAIN,[RCSettingsUtil readToken]]];
-    NSString *result = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
-    return result;
+    NSURL *url = [NSURL URLWithString:  [NSString stringWithFormat:@"%@?token=%@",[RCUrlUtil webAppUrlWithPath:@"/api/users/temp_access_token"],[RCSettingsUtil readToken]]];
+    NSString *res = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary *dict = [res objectFromJSONString];
+    if([dict objectForKey:@"error"] != @""){
+        NSLog(@"Authorize failed.");
+        return @"";
+    }
+    else {
+        NSLog(@"UnAuthorize failed.");
+        return [dict objectForKey:@"temp_access_token"];
+    }
 }
 
 - (void)dealloc{
@@ -64,7 +66,7 @@
 }
 
 - (void)about:(id)sender{
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://ruby-china.org"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[RCUrlUtil webAppUrlWithPath:@""]]];
 }
 
 - (void)settingAction:(id)sender {
@@ -83,7 +85,7 @@
     NSUserNotification *notify = [[NSUserNotification alloc] init];
     notify.title = title;
     notify.informativeText = content;
-    notify.userInfo = @{ @"url" : [NSString stringWithFormat: @"http://%@%@",APP_DOMAIN, contentPath] };
+    notify.userInfo = @{ @"url" : [RCUrlUtil webAppUrlWithPath: contentPath] };
     [notify setSoundName:NSUserNotificationDefaultSoundName];
     notify.hasActionButton = true;
     notify.actionButtonTitle = @"点击查看";

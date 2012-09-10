@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9641770C15FDF87600DA5CC0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9641770B15FDF87500DA5CC0 /* libz.dylib */; };
+		9641770F15FDFD5C00DA5CC0 /* RCUrlUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641770E15FDFD5C00DA5CC0 /* RCUrlUtil.m */; };
 		964AAC6E15F49C7B004DAAB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */; };
 		964AAC7815F49C7B004DAAB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC7615F49C7B004DAAB8 /* InfoPlist.strings */; };
 		964AAC7A15F49C7B004DAAB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC7915F49C7B004DAAB8 /* main.m */; };
@@ -42,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		9641770B15FDF87500DA5CC0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9641770D15FDFD5C00DA5CC0 /* RCUrlUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUrlUtil.h; sourceTree = "<group>"; };
+		9641770E15FDFD5C00DA5CC0 /* RCUrlUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUrlUtil.m; sourceTree = "<group>"; };
 		964AAC6915F49C7B004DAAB8 /* Ruby China Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ruby China Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		964AAC7015F49C7B004DAAB8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -213,6 +216,8 @@
 			children = (
 				9673847515F9DE2C0004D8B2 /* RCSettingsUtil.h */,
 				9673847615F9DE2C0004D8B2 /* RCSettingsUtil.m */,
+				9641770D15FDFD5C00DA5CC0 /* RCUrlUtil.h */,
+				9641770E15FDFD5C00DA5CC0 /* RCUrlUtil.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				96BC29F415F4A6DC004AE166 /* RCAppController.m in Sources */,
 				9673847215F9D91F0004D8B2 /* RCPreferencesWindowController.m in Sources */,
 				9673847715F9DE2C0004D8B2 /* RCSettingsUtil.m in Sources */,
+				9641770F15FDFD5C00DA5CC0 /* RCUrlUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
