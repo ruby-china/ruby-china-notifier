@@ -72,8 +72,10 @@
 
 - (BOOL)windowShouldClose:(id)sender {
     NSLog(@"Will to save info");
-    [RCSettingsUtil writeToken:[tokenField stringValue]];
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"RCAccessTokenChanged" object:nil];
+    if ([tokenField stringValue] != [RCSettingsUtil readToken]) {
+        [RCSettingsUtil writeToken:[tokenField stringValue]];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"RCAccessTokenChanged" object:nil];
+    }
     return YES;
 }
 

@@ -29,7 +29,6 @@
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
     
-    [[NSApp dockTile] display];
     
     if ([RCSettingsUtil readToken] == @"") {
         [self settingAction:self];
@@ -67,7 +66,6 @@
     [fayeClient connectToServer];
     NSLog(@"Faye Server connectioned.");
     [reconnectMenu setTitle:@"已连接"];
-    [self deliverUserNotificationWithTitle:@"Ruby China" withContent:@"通知中心连接成功." withContentPath:nil];
     [reconnectMenu setEnabled:NO];
 }
 
