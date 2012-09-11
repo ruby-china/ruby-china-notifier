@@ -15,7 +15,7 @@
 }
 
 + (NSString *)fayeAppUrlWithPath:(NSString *)path {
-    return [[NSString stringWithFormat:@"ws://%@", FAYE_APP_DOMAIN] stringByAppendingPathComponent:path];
+    return [NSString stringWithFormat:@"ws://%@", [FAYE_APP_DOMAIN stringByAppendingPathComponent:path]];
 }
 
 @end

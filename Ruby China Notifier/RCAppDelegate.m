@@ -10,8 +10,6 @@
 
 @implementation RCAppDelegate
 
-@synthesize window;
-
 - (void)dealloc
 {
     [super dealloc];

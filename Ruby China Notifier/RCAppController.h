@@ -14,16 +14,18 @@
 
 @interface RCAppController : NSStatusBar <FayeClientDelegate, NSUserNotificationCenterDelegate> {
     RCPreferencesWindowController *preferencesController;
+    FayeClient *fayeClient;
+    IBOutlet NSMenuItem *reconnectMenu;
+    IBOutlet NSMenu *statusMenu;
+    NSStatusItem *statusItem;
+    NSImage *statusImage;
+    NSImage *statusHighlightImage;
 }
 
-@property (retain) IBOutlet NSWindow *settingWindow;
-@property (retain) IBOutlet NSMenu *statusMenu;
-@property (retain) NSStatusItem *statusItem;
-@property (retain) NSImage *statusImage;
-@property (retain) NSImage *statusHighlightImage;
+
 
 - (IBAction)about: (id)sender;
 - (IBAction)settingAction:(id)sender;
-
+- (IBAction)connectionFayeServer:(id)sender;
 
 @end

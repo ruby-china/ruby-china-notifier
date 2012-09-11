@@ -13,6 +13,7 @@
 
 + (void) writeToken:(NSString *) token;
 + (NSString *) readToken;
-
-
++ (BOOL) willStartAtLogin;
++ (void) setStartAtLogin: (BOOL)enabled;
++ (NSURL *) appURL;
 @end

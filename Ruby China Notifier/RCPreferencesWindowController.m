@@ -19,7 +19,7 @@
 {
     self = [super initWithWindow:window];
     if (self) {
-
+        
     }
     
     return self;
@@ -31,13 +31,39 @@
     [super windowDidLoad];
     
     self.window.delegate = self;
-    [toolbar setSelectedItemIdentifier:@"base"];
+    [self selectBasePanel:nil];
     [tokenField setStringValue:[RCSettingsUtil readToken]];
+    [versionField setObjectValue:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+    [autoStartButton setState:[RCSettingsUtil willStartAtLogin]];
 }
 
+- (void) removeAllViewFormRootView {
+    [aboutPrefsView removeFromSuperview];
+    [basePrefsView removeFromSuperview];
+}
 
 - (IBAction)selectBasePanel:(id)sender {
+    [self removeAllViewFormRootView];
+    [rootView addSubview:basePrefsView];
+    [basePrefsView setFrame:rootView.frame];
     [toolbar setSelectedItemIdentifier:@"base"];
+}
+
+- (IBAction)selectAboutPanel:(id)sender {
+    [self removeAllViewFormRootView];
+    [rootView addSubview:aboutPrefsView];
+    [aboutPrefsView setFrame:rootView.frame];
+    [toolbar setSelectedItemIdentifier:@"about"];
+}
+
+- (IBAction)autoStartCheckboxChanged:(id)sender {
+    // Insert the item at the bottom of Login Items list.
+    if (autoStartButton.state == 1) {
+        [RCSettingsUtil setStartAtLogin:YES];
+    }
+    else {
+        [RCSettingsUtil setStartAtLogin:NO];
+    }
 }
 
 - (IBAction)openUserSettingsWebPage:(id)sender {
@@ -47,6 +73,7 @@
 - (BOOL)windowShouldClose:(id)sender {
     NSLog(@"Will to save info");
     [RCSettingsUtil writeToken:[tokenField stringValue]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"RCAccessTokenChanged" object:nil];
     return YES;
 }
 

@@ -12,7 +12,6 @@
 		964AAC6E15F49C7B004DAAB8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */; };
 		964AAC7815F49C7B004DAAB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC7615F49C7B004DAAB8 /* InfoPlist.strings */; };
 		964AAC7A15F49C7B004DAAB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC7915F49C7B004DAAB8 /* main.m */; };
-		964AAC7E15F49C7B004DAAB8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC7C15F49C7B004DAAB8 /* Credits.rtf */; };
 		964AAC8115F49C7B004DAAB8 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */; };
 		964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC8215F49C7B004DAAB8 /* MainMenu.xib */; };
 		9673847215F9D91F0004D8B2 /* RCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9673847015F9D91F0004D8B2 /* RCPreferencesWindowController.m */; };
@@ -30,10 +29,8 @@
 		96BC29E615F49EE4004AE166 /* FayeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29C915F49EE4004AE166 /* FayeClient.m */; };
 		96BC29E715F49EE4004AE166 /* FayeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29CB15F49EE4004AE166 /* FayeMessage.m */; };
 		96BC29E815F49EE4004AE166 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29CE15F49EE4004AE166 /* JSONKit.m */; };
-		96BC29E915F49EE4004AE166 /* AsyncSocket Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29D215F49EE4004AE166 /* AsyncSocket Documentation.html */; };
 		96BC29EA15F49EE4004AE166 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29D415F49EE4004AE166 /* AsyncSocket.m */; };
 		96BC29EB15F49EE4004AE166 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29D615F49EE4004AE166 /* AsyncUdpSocket.m */; };
-		96BC29EC15F49EE4004AE166 /* changes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29D715F49EE4004AE166 /* changes.txt */; };
 		96BC29ED15F49EE4004AE166 /* ZTWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29DC15F49EE4004AE166 /* ZTWebSocket.m */; };
 		96BC29F415F4A6DC004AE166 /* RCAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BC29F315F4A6DC004AE166 /* RCAppController.m */; };
 		96BC29F615F4A705004AE166 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 96BC29F515F4A705004AE166 /* icon.icns */; };
@@ -54,7 +51,6 @@
 		964AAC7715F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		964AAC7915F49C7B004DAAB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		964AAC7B15F49C7B004DAAB8 /* Ruby China Notifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ruby China Notifier-Prefix.pch"; sourceTree = "<group>"; };
-		964AAC7D15F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
 		964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
 		964AAC8315F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -175,7 +171,6 @@
 				964AAC7615F49C7B004DAAB8 /* InfoPlist.strings */,
 				964AAC7915F49C7B004DAAB8 /* main.m */,
 				964AAC7B15F49C7B004DAAB8 /* Ruby China Notifier-Prefix.pch */,
-				964AAC7C15F49C7B004DAAB8 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -373,10 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				964AAC7815F49C7B004DAAB8 /* InfoPlist.strings in Resources */,
-				964AAC7E15F49C7B004DAAB8 /* Credits.rtf in Resources */,
 				964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */,
-				96BC29E915F49EE4004AE166 /* AsyncSocket Documentation.html in Resources */,
-				96BC29EC15F49EE4004AE166 /* changes.txt in Resources */,
 				96BC29F615F4A705004AE166 /* icon.icns in Resources */,
 				96BC29F915F4AA91004AE166 /* status0.png in Resources */,
 				96BC29FA15F4AA91004AE166 /* status1.png in Resources */,
@@ -424,14 +416,6 @@
 				964AAC7715F49C7B004DAAB8 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		964AAC7C15F49C7B004DAAB8 /* Credits.rtf */ = {
-			isa = PBXVariantGroup;
-			children = (
-				964AAC7D15F49C7B004DAAB8 /* en */,
-			);
-			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
 		964AAC8215F49C7B004DAAB8 /* MainMenu.xib */ = {
