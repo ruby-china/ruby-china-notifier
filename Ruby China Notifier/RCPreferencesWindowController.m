@@ -21,15 +21,17 @@
     if (self) {
         
     }
-    
     return self;
+}
+
+- (void) setToFront {
+    [self.window setLevel:NSFloatingWindowLevel];
 }
 
 
 - (void)windowDidLoad
 {
     [super windowDidLoad];
-    
     self.window.delegate = self;
     [self selectBasePanel:nil];
     [tokenField setStringValue:[RCSettingsUtil readToken]];
@@ -77,6 +79,11 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"RCAccessTokenChanged" object:nil];
     }
     return YES;
+}
+
+- (void)windowDidBecomeMain:(NSNotification *)notification
+{
+    [[self window] setLevel:NSNormalWindowLevel];
 }
 
 @end

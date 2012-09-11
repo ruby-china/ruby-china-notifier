@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Ruby China Notifier/RCAppController.m"
-         timestampString = "369038301.460603"
+         timestampString = "369039400.558355"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "31"
-         endingLineNumber = "31"
+         startingLineNumber = "30"
+         endingLineNumber = "30"
          landmarkName = "-awakeFromNib"
          landmarkType = "5">
       </FileBreakpoint>

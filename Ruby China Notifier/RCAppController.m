@@ -14,7 +14,6 @@
 
 - (void)awakeFromNib {
     
-    
     statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength] retain];
     NSBundle *bundle = [NSBundle mainBundle];
     
@@ -86,6 +85,7 @@
         preferencesController = [[RCPreferencesWindowController alloc] initWithWindowNibName:@"Preferences"];
     }
     [preferencesController.window center];
+    [NSApp activateIgnoringOtherApps:YES];
     [preferencesController showWindow:self];
 }
 
@@ -148,6 +148,7 @@
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notify];
 }
+
 
 
 

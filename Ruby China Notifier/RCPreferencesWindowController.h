@@ -24,5 +24,5 @@
 - (IBAction)selectAboutPanel:(id)sender;
 - (IBAction)openUserSettingsWebPage:(id)sender;
 - (IBAction)autoStartCheckboxChanged:(id)sender;
-
+- (void) setToFront;
 @end
