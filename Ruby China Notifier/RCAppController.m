@@ -92,11 +92,12 @@
     
     if([messageDict objectForKey:@"count"] > 0){
         [[NSApp dockTile] setBadgeLabel:[NSString stringWithFormat:@"%@",[messageDict objectForKey:@"count"]]];
-        [statusItem setImage:statusHighlightImage];
     }
 }
 
+
 - (void)userNotificationCenter:(NSUserNotificationCenter *)center didActivateNotification:(NSUserNotification *) notification{
+    NSLog(@"userNotificationCenter");
     [center removeDeliveredNotification:notification];
     switch (notification.activationType) {
 		case NSUserNotificationActivationTypeActionButtonClicked:
@@ -111,7 +112,6 @@
 			NSLog(@"Notfiication appears to have been dismissed!");
 			break;
 	}
-    [statusItem setImage:statusImage];
 }
 
 
