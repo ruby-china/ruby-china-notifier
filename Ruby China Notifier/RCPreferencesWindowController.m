@@ -34,9 +34,10 @@
     [super windowDidLoad];
     self.window.delegate = self;
     [self selectBasePanel:nil];
-    [tokenField setStringValue:[RCSettingsUtil readToken]];
+    [tokenField setStringValue:[RCSettingsUtil token]];
     [versionField setObjectValue:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
     [autoStartButton setState:[RCSettingsUtil willStartAtLogin]];
+    [soundEnableButton setState:[RCSettingsUtil soundEnable]];
 }
 
 - (void) removeAllViewFormRootView {
@@ -68,14 +69,23 @@
     }
 }
 
+- (IBAction)soundEnableCheckboxChanged:(id)sender {
+    if (soundEnableButton.state == 1) {
+        [RCSettingsUtil soundEnable:YES];
+    }
+    else {
+        [RCSettingsUtil soundEnable:NO];
+    }
+}
+
 - (IBAction)openUserSettingsWebPage:(id)sender {
      [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"http://ruby-china.org/account/edit"]];
 }
 
 - (BOOL)windowShouldClose:(id)sender {
     NSLog(@"Will to save info");
-    if ([tokenField stringValue] != [RCSettingsUtil readToken]) {
-        [RCSettingsUtil writeToken:[tokenField stringValue]];
+    if ([tokenField stringValue] != [RCSettingsUtil token]) {
+        [RCSettingsUtil token:[tokenField stringValue]];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"RCAccessTokenChanged" object:nil];
     }
     return YES;

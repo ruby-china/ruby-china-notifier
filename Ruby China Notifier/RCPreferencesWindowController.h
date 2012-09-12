@@ -17,6 +17,7 @@
     IBOutlet NSTextField *tokenField;
     IBOutlet NSButton *viewProfileButton;
     IBOutlet NSButton *autoStartButton;
+    IBOutlet NSButton *soundEnableButton;
     IBOutlet NSTextField *versionField;
 }
 
@@ -24,5 +25,6 @@
 - (IBAction)selectAboutPanel:(id)sender;
 - (IBAction)openUserSettingsWebPage:(id)sender;
 - (IBAction)autoStartCheckboxChanged:(id)sender;
+- (IBAction)soundEnableCheckboxChanged:(id)sender;
 - (void) setToFront;
 @end

@@ -29,7 +29,7 @@
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
     
     
-    if ([RCSettingsUtil readToken] == @"") {
+    if ([RCSettingsUtil token] == @"") {
         [self settingAction:self];
     }
     else {
@@ -41,7 +41,7 @@
 
 - (void) connectionFayeServer:(id)sender {
     NSLog(@"initFayeClient");
-    NSURL *url = [NSURL URLWithString:  [NSString stringWithFormat:@"%@?token=%@",[RCUrlUtil webAppUrlWithPath:@"/api/users/temp_access_token"],[RCSettingsUtil readToken]]];
+    NSURL *url = [NSURL URLWithString:  [NSString stringWithFormat:@"%@?token=%@",[RCUrlUtil webAppUrlWithPath:@"/api/users/temp_access_token"],[RCSettingsUtil token]]];
     NSString *res = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     NSDictionary *dict = [res objectFromJSONString];
     if([dict objectForKey:@"temp_access_token"] == nil){
@@ -144,7 +144,9 @@
         notify.hasActionButton = true;
         notify.actionButtonTitle = @"点击查看";
     }
-    [notify setSoundName:NSUserNotificationDefaultSoundName];
+    if([RCSettingsUtil soundEnable]) {
+        [notify setSoundName:NSUserNotificationDefaultSoundName];
+    }
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notify];
 }

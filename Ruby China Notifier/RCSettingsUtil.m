@@ -9,10 +9,16 @@
 #import "RCSettingsUtil.h"
 
 NSString *const UserTokenKey = @"UserToken";
+NSString *const SoundEnableKey = @"SoundEnable";
 
 @implementation RCSettingsUtil
 
-+ (NSString *)readToken {
++ (void) initDefaults {
+    NSDictionary *defaultUserDefaults = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES],SoundEnableKey, nil];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:defaultUserDefaults];
+}
+
++ (NSString *) token {
     NSString *value = [[NSUserDefaults standardUserDefaults] stringForKey:UserTokenKey];
     if(value == nil){
         value = @"";
@@ -20,8 +26,17 @@ NSString *const UserTokenKey = @"UserToken";
     return value;
 }
 
-+ (void)writeToken:(NSString *)token {
++ (void) token:(NSString *)token {
     [[NSUserDefaults standardUserDefaults] setValue:token forKey:UserTokenKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (bool) soundEnable {
+    return [[NSUserDefaults standardUserDefaults] boolForKey:SoundEnableKey];
+}
+
++ (void) soundEnable:(bool)isEnable {
+    [[NSUserDefaults standardUserDefaults] setBool:isEnable forKey:SoundEnableKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
