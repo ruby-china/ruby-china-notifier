@@ -41,31 +41,24 @@
 
 - (void) connectionFayeServer:(id)sender {
     NSLog(@"initFayeClient");
+    if (fayeClient != nil) {
+        NSLog(@"disconnectFromServer old FayeClient.");
+        [fayeClient disconnectFromServer];
+    }
     NSURL *url = [NSURL URLWithString:  [NSString stringWithFormat:@"%@?token=%@",[RCUrlUtil webAppUrlWithPath:@"/api/users/temp_access_token"],[RCSettingsUtil token]]];
     NSString *res = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
     NSDictionary *dict = [res objectFromJSONString];
     if([dict objectForKey:@"temp_access_token"] == nil){
-        NSLog(@"Authorize failed. %@", res);
-        [reconnectMenu setTitle:@"重新连接"];
-        [reconnectMenu setEnabled:YES];
-        [self deliverUserNotificationWithTitle:@"Ruby China" withContent:@"连接失败，请重试." withContentPath:nil];
         return;
     }
 
     NSLog(@"Authorize successed.");
     NSString *user_channel_id = [dict objectForKey:@"temp_access_token"];
     NSLog(@"faye url: %@", [RCUrlUtil fayeAppUrlWithPath:@"/faye"]);
-    if (fayeClient != nil) {
-        [fayeClient disconnectFromServer];
-        NSLog(@"Disconnect old client.");
-    }
     
     fayeClient = [[FayeClient alloc] initWithURLString: [RCUrlUtil fayeAppUrlWithPath:@"/faye"] channel: [NSString stringWithFormat: @"/notifications_count/%@", user_channel_id]];
     fayeClient.delegate = self;
     [fayeClient connectToServer];
-    NSLog(@"Faye Server connectioned.");
-    [reconnectMenu setTitle:@"已连接"];
-    [reconnectMenu setEnabled:NO];
 }
 
 - (void)dealloc{
@@ -127,12 +120,22 @@
 	return !notification.isPresented;
 }
 
-- (void)connectedToServer {
-    
+- (void) connectedToServer {
+    NSLog(@"Faye connected.");
+    [reconnectMenu setTitle:@"已连接"];
+    [reconnectMenu setEnabled:NO];    
 }
 
 - (void)disconnectedFromServer{
-    
+    NSLog(@"Faye disconnected.");
+    [reconnectMenu setTitle:@"重新连接"];
+    [reconnectMenu setEnabled:YES];
+    [self deliverUserNotificationWithTitle:@"Ruby China" withContent:@"连接通知服务器失败。" withContentPath:nil];
+}
+
+- (void)subscriptionFailedWithError:(NSString *)error {
+    NSLog(@"subscriptionFailedWithError");
+    [self disconnectedFromServer];
 }
 
 - (void) deliverUserNotificationWithTitle: (NSString *) title withContent: (NSString *) content withContentPath: (NSString *) contentPath {

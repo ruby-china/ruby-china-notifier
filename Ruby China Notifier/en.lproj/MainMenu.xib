@@ -40,7 +40,6 @@
 				<array class="NSMutableArray" key="NSMenuItems">
 					<object class="NSMenuItem" id="846332010">
 						<reference key="NSMenu" ref="1044348039"/>
-						<bool key="NSIsDisabled">YES</bool>
 						<string key="NSTitle">重新连接</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSMnemonicLoc">2147483647</int>
