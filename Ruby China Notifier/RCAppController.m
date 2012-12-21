@@ -15,12 +15,11 @@
 - (void)awakeFromNib {
     
     statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength] retain];
-    NSBundle *bundle = [NSBundle mainBundle];
     
-    statusImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"status0" ofType:@"png"]];
-    statusHighlightImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"status1" ofType:@"png"]];
+    statusImage = [NSImage imageNamed:@"status"];
+    statusHighlightImage = [NSImage imageNamed:@"status_offline"];
     
-    [statusItem setImage:statusImage];
+    [statusItem setImage:statusHighlightImage];
     [statusItem setMenu:statusMenu];
     [statusItem setToolTip:@"Ruby China Notifier"];
     
@@ -123,6 +122,7 @@
 - (void) connectedToServer {
     NSLog(@"Faye connected.");
     [reconnectMenu setTitle:@"已连接"];
+    [statusItem setImage:statusImage];
     [reconnectMenu setEnabled:NO];    
 }
 
@@ -130,6 +130,7 @@
     NSLog(@"Faye disconnected.");
     [reconnectMenu setTitle:@"重新连接"];
     [reconnectMenu setEnabled:YES];
+    [statusItem setImage:statusHighlightImage];
     [self deliverUserNotificationWithTitle:@"Ruby China" withContent:@"连接通知服务器失败。" withContentPath:nil];
 }
 
