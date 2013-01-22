@@ -13,7 +13,7 @@
 // @synthesize statusItem, statusImage, statusHighlightImage, statusMenu, reconnectMenu;
 
 - (void)awakeFromNib {
-    
+
     statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength] retain];
     
     statusImage = [NSImage imageNamed:@"status"];
@@ -27,6 +27,9 @@
     
     [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkNetworkStatus:) name:kReachabilityChangedNotification object:nil];
+    hostReachable = [[Reachability reachabilityWithHostName: @"ruby-china.org"] retain];
+    [hostReachable startNotifier];
     
     if ([RCSettingsUtil token] == @"") {
         [self settingAction:self];
@@ -61,6 +64,8 @@
 }
 
 - (void)dealloc{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [hostReachable release];
     [statusImage release];
     [statusHighlightImage release];
     [statusMenu release];
@@ -155,6 +160,24 @@
     [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notify];
 }
 
+
+- (void)checkNetworkStatus:(NSNotification *)notice {
+    NetworkStatus hostStatus = [hostReachable currentReachabilityStatus];
+    switch (hostStatus)
+    {
+        case NotReachable:
+        {
+            [self disconnectedFromServer];
+            break;
+        }
+        case ReachableViaWiFi:
+        case ReachableViaWWAN:
+        {
+            [self connectedToServer];
+            break;
+        }
+    }
+}
 
 
 

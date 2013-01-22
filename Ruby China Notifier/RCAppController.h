@@ -11,8 +11,9 @@
 #import "RCPreferencesWindowController.h"
 #import "RCUrlUtil.h"
 #import "JSONKit.h"
+#import "Reachability.h"
 
-@interface RCAppController : NSStatusBar <FayeClientDelegate, NSUserNotificationCenterDelegate> {
+@interface RCAppController : NSStatusBar <FayeClientDelegate, NSUserNotificationCenterDelegate, NSNetServiceDelegate> {
     RCPreferencesWindowController *preferencesController;
     FayeClient *fayeClient;
     IBOutlet NSMenuItem *reconnectMenu;
@@ -20,6 +21,8 @@
     NSStatusItem *statusItem;
     NSImage *statusImage;
     NSImage *statusHighlightImage;
+    
+    Reachability* hostReachable;
 }
 
 

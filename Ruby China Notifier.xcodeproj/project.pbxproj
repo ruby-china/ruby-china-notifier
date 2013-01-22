@@ -14,6 +14,8 @@
 		964AAC7A15F49C7B004DAAB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC7915F49C7B004DAAB8 /* main.m */; };
 		964AAC8115F49C7B004DAAB8 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */; };
 		964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC8215F49C7B004DAAB8 /* MainMenu.xib */; };
+		9669EBCA16AE2BE8003071D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9669EBC916AE2BE8003071D6 /* SystemConfiguration.framework */; };
+		9669EBCF16AE2C35003071D6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9669EBCE16AE2C35003071D6 /* Reachability.m */; };
 		9673847215F9D91F0004D8B2 /* RCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9673847015F9D91F0004D8B2 /* RCPreferencesWindowController.m */; };
 		9673847315F9D91F0004D8B2 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9673847115F9D91F0004D8B2 /* Preferences.xib */; };
 		9673847715F9DE2C0004D8B2 /* RCSettingsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 9673847615F9DE2C0004D8B2 /* RCSettingsUtil.m */; };
@@ -56,6 +58,9 @@
 		964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
 		964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
 		964AAC8315F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9669EBC916AE2BE8003071D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9669EBCD16AE2C35003071D6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9669EBCE16AE2C35003071D6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		9673846F15F9D91F0004D8B2 /* RCPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCPreferencesWindowController.h; sourceTree = "<group>"; };
 		9673847015F9D91F0004D8B2 /* RCPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCPreferencesWindowController.m; sourceTree = "<group>"; };
 		9673847115F9D91F0004D8B2 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
@@ -109,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9669EBCA16AE2BE8003071D6 /* SystemConfiguration.framework in Frameworks */,
 				9641770C15FDF87600DA5CC0 /* libz.dylib in Frameworks */,
 				964AAC6E15F49C7B004DAAB8 /* Cocoa.framework in Frameworks */,
 			);
@@ -137,6 +143,7 @@
 		964AAC6C15F49C7B004DAAB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9669EBC916AE2BE8003071D6 /* SystemConfiguration.framework */,
 				9641770B15FDF87500DA5CC0 /* libz.dylib */,
 				964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */,
 				964AAC6F15F49C7B004DAAB8 /* Other Frameworks */,
@@ -179,6 +186,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9669EBCC16AE2C35003071D6 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9669EBCD16AE2C35003071D6 /* Reachability.h */,
+				9669EBCE16AE2C35003071D6 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = SharedLib/Reachability;
+			sourceTree = SOURCE_ROOT;
+		};
 		9673846B15F9D8B50004D8B2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +224,7 @@
 		9673846E15F9D8D30004D8B2 /* SharedLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				9669EBCC16AE2C35003071D6 /* Reachability */,
 				96BC29B315F49EE4004AE166 /* FayeObjc */,
 			);
 			name = SharedLibraries;
@@ -412,6 +430,7 @@
 				9673847215F9D91F0004D8B2 /* RCPreferencesWindowController.m in Sources */,
 				9673847715F9DE2C0004D8B2 /* RCSettingsUtil.m in Sources */,
 				9641770F15FDFD5C00DA5CC0 /* RCUrlUtil.m in Sources */,
+				9669EBCF16AE2C35003071D6 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
