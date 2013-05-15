@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 #import "RCSettingsUtil.h"
+#import <Sparkle/Sparkle.h>
 
 @interface RCPreferencesWindowController : NSWindowController <NSWindowDelegate> {
     IBOutlet NSToolbar *toolbar;

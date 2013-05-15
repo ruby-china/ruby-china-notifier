@@ -14,6 +14,9 @@
 		964AAC7A15F49C7B004DAAB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC7915F49C7B004DAAB8 /* main.m */; };
 		964AAC8115F49C7B004DAAB8 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */; };
 		964AAC8415F49C7B004DAAB8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 964AAC8215F49C7B004DAAB8 /* MainMenu.xib */; };
+		965F042F174333D7008F1EEB /* ruby-china-notifier-public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 965F042E174333D7008F1EEB /* ruby-china-notifier-public.pem */; };
+		965F043117433485008F1EEB /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 965F042C174333BA008F1EEB /* Sparkle.framework */; };
+		965F043517433521008F1EEB /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 965F042C174333BA008F1EEB /* Sparkle.framework */; };
 		9669EBCA16AE2BE8003071D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9669EBC916AE2BE8003071D6 /* SystemConfiguration.framework */; };
 		9669EBCF16AE2C35003071D6 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9669EBCE16AE2C35003071D6 /* Reachability.m */; };
 		9673847215F9D91F0004D8B2 /* RCPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9673847015F9D91F0004D8B2 /* RCPreferencesWindowController.m */; };
@@ -42,6 +45,19 @@
 		96EBA8C716841897002F70EF /* status@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96EBA8C316841897002F70EF /* status@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		965F0432174334C8008F1EEB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				965F043517433521008F1EEB /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9641770B15FDF87500DA5CC0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		9641770D15FDFD5C00DA5CC0 /* RCUrlUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUrlUtil.h; sourceTree = "<group>"; };
@@ -58,6 +74,8 @@
 		964AAC7F15F49C7B004DAAB8 /* RCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
 		964AAC8015F49C7B004DAAB8 /* RCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
 		964AAC8315F49C7B004DAAB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		965F042C174333BA008F1EEB /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = SharedLib/Sparkle.framework; sourceTree = "<group>"; };
+		965F042E174333D7008F1EEB /* ruby-china-notifier-public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ruby-china-notifier-public.pem"; sourceTree = "<group>"; };
 		9669EBC916AE2BE8003071D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9669EBCD16AE2C35003071D6 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		9669EBCE16AE2C35003071D6 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -114,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965F043117433485008F1EEB /* Sparkle.framework in Frameworks */,
 				9669EBCA16AE2BE8003071D6 /* SystemConfiguration.framework in Frameworks */,
 				9641770C15FDF87600DA5CC0 /* libz.dylib in Frameworks */,
 				964AAC6E15F49C7B004DAAB8 /* Cocoa.framework in Frameworks */,
@@ -143,6 +162,7 @@
 		964AAC6C15F49C7B004DAAB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				965F042C174333BA008F1EEB /* Sparkle.framework */,
 				9669EBC916AE2BE8003071D6 /* SystemConfiguration.framework */,
 				9641770B15FDF87500DA5CC0 /* libz.dylib */,
 				964AAC6D15F49C7B004DAAB8 /* Cocoa.framework */,
@@ -178,6 +198,7 @@
 		964AAC7415F49C7B004DAAB8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				965F042E174333D7008F1EEB /* ruby-china-notifier-public.pem */,
 				964AAC7515F49C7B004DAAB8 /* Ruby China Notifier-Info.plist */,
 				964AAC7615F49C7B004DAAB8 /* InfoPlist.strings */,
 				964AAC7915F49C7B004DAAB8 /* main.m */,
@@ -349,6 +370,7 @@
 				964AAC6515F49C7A004DAAB8 /* Sources */,
 				964AAC6615F49C7A004DAAB8 /* Frameworks */,
 				964AAC6715F49C7A004DAAB8 /* Resources */,
+				965F0432174334C8008F1EEB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -399,6 +421,7 @@
 				96EBA8C516841897002F70EF /* status_offline@2x.png in Resources */,
 				96EBA8C616841897002F70EF /* status.png in Resources */,
 				96EBA8C716841897002F70EF /* status@2x.png in Resources */,
+				965F042F174333D7008F1EEB /* ruby-china-notifier-public.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +531,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SharedLib\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ruby China Notifier/Ruby China Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Ruby China Notifier/Ruby China Notifier-Info.plist";
@@ -523,7 +549,10 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/SharedLib\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ruby China Notifier/Ruby China Notifier-Prefix.pch";
 				INFOPLIST_FILE = "Ruby China Notifier/Ruby China Notifier-Info.plist";

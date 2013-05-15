@@ -136,7 +136,6 @@
     [reconnectMenu setTitle:@"重新连接"];
     [reconnectMenu setEnabled:YES];
     [statusItem setImage:statusHighlightImage];
-    [self deliverUserNotificationWithTitle:@"Ruby China" withContent:@"连接通知服务器失败。" withContentPath:nil];
 }
 
 - (void)subscriptionFailedWithError:(NSString *)error {
@@ -173,7 +172,7 @@
         case ReachableViaWiFi:
         case ReachableViaWWAN:
         {
-            [self connectedToServer];
+            [self connectionFayeServer:nil];
             break;
         }
     }

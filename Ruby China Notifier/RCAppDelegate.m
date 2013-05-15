@@ -7,6 +7,7 @@
 //
 
 #import "RCAppDelegate.h"
+#import <Sparkle/Sparkle.h>
 
 @implementation RCAppDelegate
 
@@ -20,7 +21,15 @@
     NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
     [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
     [RCSettingsUtil initDefaults];
+    
+    [self initAutoUpdate];
+    [[SUUpdater sharedUpdater] checkForUpdatesInBackground];
 }
 
+- (void) initAutoUpdate {
+    NSString *feedUrl = @"http://update.labs.etao.com/ruby-china-notifier/updates.xml";
+    
+    [[SUUpdater sharedUpdater] setFeedURL:[NSURL URLWithString:feedUrl]];
+}
 
 @end
