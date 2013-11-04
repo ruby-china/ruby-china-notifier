@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#ifdef DEBUG
+#ifdef DEBUG1
 static NSString * WEB_APP_DOMAIN = @"127.0.0.1:3000";
 static NSString * FAYE_APP_DOMAIN = @"127.0.0.1:8080";
 #else
