@@ -11,7 +11,7 @@
 @implementation RCUrlUtil
 
 + (NSString *) webAppUrlWithPath: (NSString *) path {
-    return [[NSString stringWithFormat:@"http://%@", WEB_APP_DOMAIN] stringByAppendingPathComponent:path];
+    return [[NSString stringWithFormat:@"https://%@", WEB_APP_DOMAIN] stringByAppendingPathComponent:path];
 }
 
 + (NSString *)fayeAppUrlWithPath:(NSString *)path {
